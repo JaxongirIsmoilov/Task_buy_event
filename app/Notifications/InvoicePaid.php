@@ -41,7 +41,7 @@ class InvoicePaid extends Notification
         if (!$this->channel){
             throw new \Exception('Sending a message failed. No channel provided.');
         }
-        return is_array($this->channel) ? $this->channel : [$this->channel];
+        return $this->channel;
     }
 
     /**
