@@ -1,0 +1,222 @@
+[2020-08-29 17:46:00] local.ERROR: Too few arguments to function Illuminate\Database\Schema\Blueprint::uuid(), 0 passed in /home/jaxongir/Documents/My_projects/Buy_Event/database/migrations/2020_08_29_174334_create_notifications_table.php on line 17 and exactly 1 expected {"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function Illuminate\\Database\\Schema\\Blueprint::uuid(), 0 passed in /home/jaxongir/Documents/My_projects/Buy_Event/database/migrations/2020_08_29_174334_create_notifications_table.php on line 17 and exactly 1 expected at /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php:1148)
+[stacktrace]
+#0 /home/jaxongir/Documents/My_projects/Buy_Event/database/migrations/2020_08_29_174334_create_notifications_table.php(17): Illuminate\\Database\\Schema\\Blueprint->uuid()
+#1 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(166): CreateNotificationsTable->{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Support/helpers.php(433): Illuminate\\Database\\Schema\\Builder->Illuminate\\Database\\Schema\\{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(167): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Database\\Schema\\Builder->create('notifications', Object(Closure))
+#5 /home/jaxongir/Documents/My_projects/Buy_Event/database/migrations/2020_08_29_174334_create_notifications_table.php(23): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(392): CreateNotificationsTable->up()
+#7 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(401): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#8 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(200): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateNotificationsTable), 'up')
+#9 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(165): Illuminate\\Database\\Migrations\\Migrator->runUp('/home/jaxongir/...', 1, false)
+#10 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(110): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#11 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(72): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#12 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(541): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#13 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(81): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#14 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#15 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array(Array, Array)
+#16 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#21 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /home/jaxongir/Documents/My_projects/Buy_Event/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+"} 
+[2020-08-29 17:46:56] local.ERROR: There are no commands defined in the "migartion" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"migartion\" namespace. at /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php:574)
+[stacktrace]
+#0 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('migartion')
+#1 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find('migartion:fresh')
+#2 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /home/jaxongir/Documents/My_projects/Buy_Event/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2020-08-29 17:47:06] local.ERROR: There are no commands defined in the "migration" namespace.
+
+Did you mean this?
+    migrate {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"migration\" namespace.
+
+Did you mean this?
+    migrate at /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php:574)
+[stacktrace]
+#0 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('migration')
+#1 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find('migration:fresh')
+#2 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /home/jaxongir/Documents/My_projects/Buy_Event/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2020-08-29 18:50:09] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-29 19:53:16] local.ERROR: syntax error, unexpected '->' (T_OBJECT_OPERATOR) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '->' (T_OBJECT_OPERATOR) at /home/jaxongir/Documents/My_projects/Buy_Event/app/Notifications/InvoicePaid.php:50)
+[stacktrace]
+#0 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile('/home/jaxongir/...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Notificatio...')
+#2 /home/jaxongir/Documents/My_projects/Buy_Event/app/Console/Commands/notify.php(55): spl_autoload_call('App\\\\Notificatio...')
+#3 [internal function]: App\\Console\\Commands\
+otify->handle()
+#4 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array(Array, Array)
+#5 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#8 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#9 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#10 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\
+otify), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /home/jaxongir/Documents/My_projects/Buy_Event/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 {main}
+"} 
+[2020-08-29 19:54:53] local.ERROR: Please provide Nexmo API credentials. Possible combinations: api_key + api_secret, api_key + signature_secret, private_key + application_id, api_key + api_secret + private_key + application_id, api_key + signature_secret + private_key + application_id  
+[2020-08-29 19:57:41] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-29 20:05:32] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-29 20:06:00] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-29 20:08:11] local.ERROR: Call to a member function create() on string {"exception":"[object] (Error(code: 0): Call to a member function create() on string at /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/Channels/DatabaseChannel.php:19)
+[stacktrace]
+#0 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(148): Illuminate\\Notifications\\Channels\\DatabaseChannel->send(Object(App\\Client), Object(App\\Notifications\\InvoicePaid))
+#1 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(106): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(App\\Client), '3df0bdbc-8981-4...', Object(App\\Notifications\\InvoicePaid), 'database')
+#2 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Notifications\\NotificationSender->Illuminate\\Notifications\\{closure}()
+#3 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(109): Illuminate\\Notifications\\NotificationSender->withLocale(NULL, Object(Closure))
+#4 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(79): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(App\\Notifications\\InvoicePaid))
+#5 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/ChannelManager.php(39): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(App\\Notifications\\InvoicePaid))
+#6 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(App\\Client), Object(App\\Notifications\\InvoicePaid))
+#7 /home/jaxongir/Documents/My_projects/Buy_Event/app/Console/Commands/notify.php(55): App\\Client->notify(Object(App\\Notifications\\InvoicePaid))
+#8 [internal function]: App\\Console\\Commands\
+otify->handle()
+#9 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array(Array, Array)
+#10 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#15 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\
+otify), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /home/jaxongir/Documents/My_projects/Buy_Event/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+"} 
+[2020-08-29 20:15:41] local.ERROR: Call to undefined method App\Shopping::to_array()  
+[2020-08-29 20:16:52] local.ERROR: Call to undefined method App\Shopping::is_array()  
+[2020-08-30 07:04:45] local.ERROR: Property [name] does not exist on this collection instance.  
+[2020-08-30 07:06:43] local.ERROR: Address in mailbox given [+18846153665] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 07:14:49] local.ERROR: Address in mailbox given [smtp.mailtrap.io] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 07:18:45] local.ERROR: Address in mailbox given [430-487-0100 x49432] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 07:26:38] local.ERROR: Address in mailbox given [430-487-0100 x49432] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 07:27:36] local.ERROR: Address in mailbox given [+18846153665] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 07:34:02] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 07:39:56] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 08:13:20] local.ERROR: to address is too long  
+[2020-08-30 08:17:57] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 08:18:06] local.ERROR: to address is too long  
+[2020-08-30 08:18:24] local.ERROR: Call to a member function create() on string {"exception":"[object] (Error(code: 0): Call to a member function create() on string at /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/Channels/DatabaseChannel.php:19)
+[stacktrace]
+#0 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(148): Illuminate\\Notifications\\Channels\\DatabaseChannel->send(Object(App\\Client), Object(App\\Notifications\\InvoicePaid))
+#1 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(106): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(App\\Client), '085f1cde-f36b-4...', Object(App\\Notifications\\InvoicePaid), 'database')
+#2 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Notifications\\NotificationSender->Illuminate\\Notifications\\{closure}()
+#3 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(109): Illuminate\\Notifications\\NotificationSender->withLocale(NULL, Object(Closure))
+#4 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(79): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(App\\Notifications\\InvoicePaid))
+#5 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/ChannelManager.php(39): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(App\\Notifications\\InvoicePaid))
+#6 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(App\\Client), Object(App\\Notifications\\InvoicePaid))
+#7 /home/jaxongir/Documents/My_projects/Buy_Event/app/Console/Commands/notify.php(55): App\\Client->notify(Object(App\\Notifications\\InvoicePaid))
+#8 [internal function]: App\\Console\\Commands\
+otify->handle()
+#9 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array(Array, Array)
+#10 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#15 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\
+otify), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /home/jaxongir/Documents/My_projects/Buy_Event/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+"} 
+[2020-08-30 08:22:27] local.ERROR: Call to a member function create() on string {"exception":"[object] (Error(code: 0): Call to a member function create() on string at /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/Channels/DatabaseChannel.php:19)
+[stacktrace]
+#0 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(148): Illuminate\\Notifications\\Channels\\DatabaseChannel->send(Object(App\\Client), Object(App\\Notifications\\InvoicePaid))
+#1 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(106): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(App\\Client), '8bbdc717-693e-4...', Object(App\\Notifications\\InvoicePaid), 'database')
+#2 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Notifications\\NotificationSender->Illuminate\\Notifications\\{closure}()
+#3 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(109): Illuminate\\Notifications\\NotificationSender->withLocale(NULL, Object(Closure))
+#4 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(79): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(App\\Notifications\\InvoicePaid))
+#5 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/ChannelManager.php(39): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(App\\Notifications\\InvoicePaid))
+#6 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(App\\Client), Object(App\\Notifications\\InvoicePaid))
+#7 /home/jaxongir/Documents/My_projects/Buy_Event/app/Console/Commands/notify.php(55): App\\Client->notify(Object(App\\Notifications\\InvoicePaid))
+#8 [internal function]: App\\Console\\Commands\
+otify->handle()
+#9 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array(Array, Array)
+#10 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#15 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\
+otify), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /home/jaxongir/Documents/My_projects/Buy_Event/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+"} 
+[2020-08-30 08:22:53] local.ERROR: No query results for model [App\Shopping].  
+[2020-08-30 08:23:04] local.ERROR: to address is too long  
+[2020-08-30 08:25:10] local.ERROR: to address is too long  
+[2020-08-30 08:25:30] local.ERROR: to address is too long  
+[2020-08-30 08:27:53] local.ERROR: Call to a member function notify() on string {"exception":"[object] (Error(code: 0): Call to a member function notify() on string at /home/jaxongir/Documents/My_projects/Buy_Event/app/Console/Commands/notify.php:55)
+[stacktrace]
+#0 [internal function]: App\\Console\\Commands\
+otify->handle()
+#1 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array(Array, Array)
+#2 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#7 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\
+otify), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /home/jaxongir/Documents/My_projects/Buy_Event/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /home/jaxongir/Documents/My_projects/Buy_Event/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2020-08-30 08:29:16] local.ERROR: to address is too long  
+[2020-08-30 08:33:30] local.ERROR: cURL error 6: Could not resolve host: rest.nexmo.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html)  
+[2020-08-30 08:47:06] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 08:48:59] local.ERROR: to address is too long  
+[2020-08-30 09:13:07] local.ERROR: to address is too long  
+[2020-08-30 09:36:49] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 09:38:49] local.ERROR: Address in mailbox given [(360) 278-9286 x58355] does not comply with RFC 2822, 3.6.2.  
+[2020-08-30 09:43:48] local.ERROR: Non White-listed Destination - rejected  
+[2020-08-30 09:53:25] local.ERROR: to address is too long  
